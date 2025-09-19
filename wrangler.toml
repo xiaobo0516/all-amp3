@@ -1,0 +1,30 @@
+name = "all-amp3"
+compatibility_date = "2025-09-11"
+main = "worker.js"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+run_worker_first = [
+  "/",
+  "/robots.txt",
+  "/sitemap.xml",
+  "/google0044ab520dd9afaf.html",
+  "/google48428a5b5297f7c9.html",
+  "/googleb05f3eddd9c7eb47.html",
+  "/googlebdb35ae89b3e9606.html"
+]
+html_handling = "force-trailing-slash"
+
+[[d1_databases]]
+binding = "D1AMP3"
+database_name = "india"
+database_id = "9ba306ae-c9d0-406a-bf73-5deb5b9aed5c"
+
+[observability.logs]
+enabled = true
+
+
+
+
